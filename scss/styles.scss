@@ -6,3 +6,48 @@ body {
     font-family: "Oswald", "Open Sans", sans-serif;
     background-color: $primary-color;
 }
+
+.footer {
+    background-color: $third-color;
+    &__title {
+        color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title--lighter {
+        font-weight: lighter;
+        letter-spacing: 0.4rem;
+    }
+
+    &__title--through {
+        text-decoration: line-through $secondary-color;
+    }
+
+    &__title--cross {
+        width: 2%;
+    }
+
+    &__menu {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    &__menu--item {
+        margin: 0;
+        font-weight: lighter;
+        letter-spacing: 0.4rem;
+    }
+
+    &__menu--item-through {
+        text-decoration: line-through $secondary-color;
+        font-weight: lighter;
+        letter-spacing: 0.25rem;
+        margin: 0;
+    }
+}
