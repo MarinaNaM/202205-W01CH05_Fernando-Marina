@@ -43,3 +43,32 @@ body {
   letter-spacing: 0.25rem;
   margin: 0;
 }
+.footer__nav {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 0;
+}
+.footer__nav--title {
+  padding-left: 0;
+  letter-spacing: 0.25rem;
+}
+.footer .nav__list {
+  color: #16ffbd;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  padding-left: 0;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+}
+.footer .nav__list-item {
+  text-decoration: none;
+  color: inherit;
+}

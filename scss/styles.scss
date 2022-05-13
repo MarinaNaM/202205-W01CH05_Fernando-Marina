@@ -50,4 +50,40 @@ body {
         letter-spacing: 0.25rem;
         margin: 0;
     }
+
+    &__nav {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 0;
+    }
+
+    &__nav--title {
+        padding-left: 0;
+        letter-spacing: 0.25rem;
+    }
+
+    .nav__list {
+        color: $primary-color;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        padding-left: 0;
+        letter-spacing: 0.1rem;
+        font-weight: lighter;
+    }
+
+    &__sns {
+    }
+
+    .nav__list-item {
+        text-decoration: none;
+        color: inherit;
+    }
 }
