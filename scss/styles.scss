@@ -1,0 +1,8 @@
+@import "variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap&family=Oswald:wght@400;700&display=swap");
+
+body {
+    font-family: "Oswald", "Open Sans", sans-serif;
+    background-color: $primary-color;
+}
