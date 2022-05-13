@@ -1,0 +1,22 @@
+@import "variables";
+
+.header {
+    &__elem{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__elem:nth-child(2){
+        justify-content: center;
+    }
+    &__elem:nth-child(1) > div:nth-child(2) {
+        padding: 0.3rem 1rem;
+        }
+    &__elem img{
+        width: 2rem;
+    }
+    &__elem .logo{
+        width: 7rem;
+        margin: -16px 0 0 0;
+    }
+}

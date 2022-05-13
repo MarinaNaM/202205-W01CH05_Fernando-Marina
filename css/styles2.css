@@ -1,0 +1,19 @@
+
+.header__elem {
+  display: flex;
+  justify-content: space-between;
+}
+.header__elem:nth-child(2) {
+  justify-content: center;
+}
+.header__elem:nth-child(1) > div:nth-child(2) {
+  padding: 0.3rem 1rem;
+}
+.header__elem img {
+  width: 2rem;
+}
+.header__elem .logo {
+  width: 7rem;
+  margin: -16px 0 0 0;
+}
+

@@ -3,3 +3,43 @@ body {
   font-family: "Oswald", "Open Sans", sans-serif;
   background-color: #16ffbd;
 }
+
+.footer {
+  background-color: #080d14;
+}
+.footer__title {
+  color: #16ffbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__title--lighter {
+  font-weight: lighter;
+  letter-spacing: 0.4rem;
+}
+.footer__title--through {
+  text-decoration: line-through #fd8cab;
+}
+.footer__title--cross {
+  width: 2%;
+}
+.footer__menu {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.footer__menu--item {
+  margin: 0;
+  font-weight: lighter;
+  letter-spacing: 0.4rem;
+}
+.footer__menu--item-through {
+  text-decoration: line-through #fd8cab;
+  font-weight: lighter;
+  letter-spacing: 0.25rem;
+  margin: 0;
+}
