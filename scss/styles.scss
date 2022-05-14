@@ -11,9 +11,11 @@ body {
 .video {
     display: flex;
     width: 100vw;
+
     &__image {
         width: 100%;
     }
+
     &__play {
         position: absolute;
         display: flex;
@@ -34,6 +36,14 @@ body {
             letter-spacing: 0.3rem;
             margin: 0;
         }
+    }
+
+    &__play--desktop {
+        display: none;
+    }
+
+    video {
+        display: none;
     }
 }
 
@@ -235,5 +245,55 @@ body {
     .nav__list-item {
         text-decoration: none;
         color: inherit;
+    }
+}
+
+@media (min-width: 600px) {
+    .video {
+        .video__image {
+            display: none;
+        }
+
+        video {
+            display: initial;
+            width: 100%;
+            clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+        }
+
+        &__play {
+            position: absolute;
+            z-index: 2;
+
+            p {
+                display: none;
+            }
+        }
+
+        &__play--desktop {
+            display: initial;
+        }
+    }
+
+    .description {
+        &__title {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .rest-content {
+        .gallery-colum {
+            display: flex;
+            flex-direction: row;
+
+            &__gallery {
+                min-width: 100%;
+
+                &__gallery-image {
+                    max-width: 33%;
+                }
+            }
+            //
+        }
     }
 }
