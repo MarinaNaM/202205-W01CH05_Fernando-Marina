@@ -1,14 +1,36 @@
 @import "variables";
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap&family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap&family=Oswald&display=swap");
 
 body {
     font-family: "Oswald", "Open Sans", sans-serif;
     background-color: $primary-color;
+    margin: 0;
+}
+
+.video {
+    display: flex;
+    width: 100vw;
+    &__image {
+        width: 100%;
+    }
+    &__play {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 20%;
+        }
+    }
 }
 
 .footer {
     background-color: $third-color;
+    padding-bottom: 20%;
     &__title {
         color: $primary-color;
         display: flex;
@@ -21,16 +43,13 @@ body {
         letter-spacing: 0.4rem;
     }
 
-    &__title--through {
-        text-decoration: line-through $secondary-color;
-    }
-
     &__title--cross {
         width: 2%;
     }
 
     &__menu {
         color: white;
+        font-size: 18px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -38,17 +57,26 @@ body {
         margin-top: 10%;
     }
 
-    &__menu--item {
-        margin: 0;
-        font-weight: lighter;
-        letter-spacing: 0.4rem;
+    &__menu-item:hover {
+        text-decoration: line-through $secondary-color;
+        color: $secondary-color;
     }
 
-    &__menu--item-through {
-        text-decoration: line-through $secondary-color;
-        font-weight: lighter;
-        letter-spacing: 0.25rem;
+    &__menu-item {
         margin: 0;
+        font-weight: lighter;
+        letter-spacing: 0.3rem;
+    }
+
+    &__social-media-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > img {
+            width: 10%;
+            letter-spacing: 0.25rem;
+            margin: 2%;
+        }
     }
 
     &__nav {
@@ -57,17 +85,27 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10%;
+        margin-top: 8%;
         margin-bottom: 0;
+    }
+
+    &__nav--margin {
+        margin-top: -3%;
+    }
+
+    &__nav-list {
+        letter-spacing: 0.15rem;
     }
 
     &__nav--title {
         padding-left: 0;
         letter-spacing: 0.25rem;
+        margin-bottom: 2%;
     }
 
     .nav__list {
         color: $primary-color;
+        font-size: 13px;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -75,11 +113,23 @@ body {
         align-items: center;
         margin-top: 5%;
         padding-left: 0;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.15rem;
         font-weight: lighter;
     }
 
-    &__sns {
+    &__social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__social-media-title {
+        & > p {
+            color: white;
+            letter-spacing: 0.25rem;
+            margin-top: 21%;
+        }
     }
 
     .nav__list-item {
