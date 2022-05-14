@@ -293,7 +293,14 @@ body {
                     max-width: 33%;
                 }
             }
-            //
+        }
+    }
+
+    .footer {
+        display: flex;
+
+        &__menu {
+            display: none;
         }
     }
 }

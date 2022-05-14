@@ -249,4 +249,11 @@ body {
   .rest-content .gallery-colum__gallery__gallery-image {
     max-width: 33%;
   }
+
+  .footer {
+    display: flex;
+  }
+  .footer__menu {
+    display: none;
+  }
 }
