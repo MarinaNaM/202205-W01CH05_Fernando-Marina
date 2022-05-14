@@ -1,5 +1,9 @@
 @import "variables";
 
+.letter-spacing{
+    letter-spacing: 0.4rem;
+}
+
 .header {
     &__elem{
         display: flex;
@@ -19,4 +23,8 @@
         width: 7rem;
         margin: -16px 0 0 0;
     }
+}
+.header__elem span{
+    padding: 0.5rem 0 1rem 1rem;
+    font-weight: lighter;
 }
