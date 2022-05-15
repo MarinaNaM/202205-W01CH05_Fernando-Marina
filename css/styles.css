@@ -151,7 +151,7 @@ body {
   align-items: center;
   margin-top: 10%;
 }
-.footer__menu-item:hover {
+.footer__menu-item a:hover {
   text-decoration: line-through rgb(253, 140, 171);
   color: rgb(253, 140, 171);
 }

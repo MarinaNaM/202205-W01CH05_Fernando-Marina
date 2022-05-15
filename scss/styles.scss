@@ -176,9 +176,11 @@ body {
         margin-top: 10%;
     }
 
-    &__menu-item:hover {
-        text-decoration: line-through $secondary-color;
-        color: $secondary-color;
+    &__menu-item {
+        a:hover {
+            text-decoration: line-through $secondary-color;
+            color: $secondary-color;
+        }
     }
 
     &__menu-item {
@@ -370,5 +372,4 @@ body {
             grid-row: 4;
         }
     }
-    
 }
