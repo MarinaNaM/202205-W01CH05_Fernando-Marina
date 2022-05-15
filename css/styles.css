@@ -134,6 +134,9 @@ body {
   font-weight: lighter;
   letter-spacing: 0.4rem;
 }
+.footer__title--through {
+  text-decoration: line-through rgb(253, 140, 171);
+}
 .footer__title--cross {
   width: 2%;
 }
@@ -147,8 +150,8 @@ body {
   margin-top: 10%;
 }
 .footer__menu-item:hover {
-  text-decoration: line-through #fd8cab;
-  color: #fd8cab;
+  text-decoration: line-through rgb(253, 140, 171);
+  color: rgb(253, 140, 171);
 }
 .footer__menu-item {
   margin: 0;
