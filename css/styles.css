@@ -147,8 +147,8 @@ body {
   margin-top: 10%;
 }
 .footer__menu-item:hover {
-  text-decoration: line-through rgb(253, 140, 171);
-  color: rgb(253, 140, 171);
+  text-decoration: line-through #fd8cab;
+  color: #fd8cab;
 }
 .footer__menu-item {
   margin: 0;
