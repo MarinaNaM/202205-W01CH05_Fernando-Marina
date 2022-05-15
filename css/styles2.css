@@ -63,7 +63,7 @@ p {
   margin-top: -30.5%;
 }
 .works-gallery__block__img img {
-  width: 100vw;
+  width: 100%;
 }
 
 .about-main {
@@ -113,6 +113,21 @@ p {
   .header__elem:nth-child(2) {
     padding: 0.4rem 23vw;
     margin-top: 70px;
+  }
+
+  .works-gallery {
+    margin-top: 6%;
+  }
+  .works-gallery .works-gallery__block {
+    display: flex;
+    clip-path: polygon(0 32%, 100% 0%, 100% 68%, 0% 100%);
+    margin-top: -114px;
+  }
+  .works-gallery .works-gallery__block > div {
+    margin-top: 0;
+  }
+  .works-gallery .works-gallery__block__img {
+    clip-path: none;
   }
 }
 @media all and (min-width: 1200px) {
