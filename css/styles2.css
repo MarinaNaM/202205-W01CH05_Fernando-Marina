@@ -91,6 +91,11 @@ p {
   display: none;
 }
 
+.about-image img {
+  width: 100%;
+  display: none;
+}
+
 @media all and (min-width: 600px) {
   .header__elem .logo {
     width: 7rem;
@@ -128,6 +133,10 @@ p {
   }
   .works-gallery .works-gallery__block__img {
     clip-path: none;
+  }
+
+  .about-image img {
+    display: initial;
   }
 }
 @media all and (min-width: 1200px) {
