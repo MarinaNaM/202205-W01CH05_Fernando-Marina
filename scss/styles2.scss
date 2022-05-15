@@ -1,12 +1,30 @@
 @import "variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1920px;
+}
+
+.letter-spacing{
+    letter-spacing: 0.4rem;
+}
+p{
+    font-weight: 300;
+}
+
 .header {
     &__elem{
         display: flex;
         justify-content: space-between;
         
     }
-    &__elem:nth-child(2){
+    &__elem:nth-child(3){
         justify-content: center;
     }
     &__elem:nth-child(1) > div:nth-child(2) {
@@ -18,5 +36,70 @@
     &__elem .logo{
         width: 7rem;
         margin: -16px 0 0 0;
+    }
+}
+.header__elem span{
+    padding: 0.5rem 0 1rem 1rem;
+    font-weight: lighter;
+}
+.works-gallery {
+    width: 100vw;
+    margin-top: 29%;
+    &__block__img {
+        width: 100vw;
+        display: flex;
+        margin: 0;
+        margin-top: 0px;
+        padding: 0;
+        clip-path: polygon(0 32%, 100% 0%, 100% 68%, 0% 100%);
+        margin-top: -30.5%;
+    }
+    &__block__img img{
+        width: 100vw;
+    }
+}
+.about-main{
+    h2{
+        font-weight: 500;
+        margin: 0 0 20px 0;
+    }
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    &__options{
+        padding: 1rem 0;
+        img{
+            margin: 0 7px 5px 05px;
+        }
+    }
+    p {
+        letter-spacing:0.2rem;
+    }
+    .articles-wrapper__article{
+        padding: 2rem 0 2rem 0;
+    }
+}
+.header__elem--desktop{
+    display:none;
+}
+@media all and (min-width: 600px){
+    .header{
+        padding: 5rem 34rem 0 34rem;
+    }
+    .header__elem .logo {
+        width: 15rem;
+        }
+    .header__elem--desktop{
+        display: flex;
+        >div{
+            display: flex;
+            width: 9.3vw;
+            justify-content: space-between;
+        }
+    }
+    .header__elem--mobile{
+        display:none;
+    }
+    .header__elem:nth-child(2){
+        padding: 3rem 3rem;
     }
 }
