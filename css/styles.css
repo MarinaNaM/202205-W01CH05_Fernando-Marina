@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap&family=Oswald&display=swap");
 body {
+  box-sizing: border-box;
   font-family: "Oswald", "Open Sans", sans-serif;
   background-color: #16ffbd;
   margin: 0;
@@ -43,22 +44,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
 }
 .description__title {
-  display: flex;
   text-align: center;
   font-size: 22px;
-  width: 71%;
   letter-spacing: 0.3rem;
-  font-weight: 100;
+  font-weight: 500;
 }
 .description__sinopsis {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.2rem;
-  display: flex;
+  margin: 5% 0;
   text-align: center;
-  width: 87%;
   line-height: 1.7rem;
 }
 
@@ -67,8 +66,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 15%;
-  padding-top: 0;
   height: 80px;
 }
 .page-break__cross {
@@ -91,15 +88,16 @@ body {
   align-items: center;
 }
 .rest-content__link-title {
-  margin: 0;
+  text-align: center;
   font-size: 22px;
-  font-weight: 100;
   letter-spacing: 0.3rem;
+  font-weight: 500;
+  margin-top: 10%;
 }
 .rest-content__link-url {
   color: black;
   margin-top: 8%;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.2rem;
 }
 .rest-content__gallery {
@@ -107,16 +105,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
+  margin: 15% 0;
 }
 .rest-content__gallery-image {
   width: 100vw;
   clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
 }
 .rest-content__gallery-description {
-  font-size: 14px;
+  text-align: center;
+  font-size: 30px;
   letter-spacing: 0.2rem;
   font-weight: 500;
+  transform: rotate(-14deg);
 }
 
 .footer {
@@ -129,6 +129,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 15%;
 }
 .footer__title--lighter {
   font-weight: lighter;
@@ -139,6 +140,7 @@ body {
 }
 .footer__title--cross {
   width: 2%;
+  margin-top: 8%;
 }
 .footer__menu {
   color: white;
@@ -162,6 +164,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3%;
 }
 .footer__social-media-images > img {
   width: 10%;
@@ -176,9 +179,6 @@ body {
   align-items: center;
   margin-top: 8%;
   margin-bottom: 0;
-}
-.footer__nav--margin {
-  margin-top: -3%;
 }
 .footer__nav-list {
   letter-spacing: 0.15rem;
@@ -237,26 +237,79 @@ body {
     display: initial;
   }
 
-  .description__title {
+  .description {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .description__title {
+    width: 37%;
+  }
+  .description__sinopsis {
+    width: 46%;
   }
 
+  .page-break__cross {
+    width: 1%;
+  }
+
+  .page-break__wave {
+    width: 5%;
+  }
+
+  .rest-content .rest-content__link-title {
+    margin-top: 15%;
+  }
   .rest-content .gallery-colum {
     display: flex;
     flex-direction: row;
   }
   .rest-content .gallery-colum .rest-content__gallery {
     max-width: 33%;
+    margin: 8% 0 10% 0;
   }
   .rest-content .gallery-colum .rest-content__gallery .rest-content__gallery-image {
     max-width: 100%;
   }
+  .rest-content .gallery-colum .rest-content__gallery-description {
+    font-size: 12px;
+  }
 
   .footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .footer__menu {
     display: none;
+  }
+  .footer div:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .footer div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .footer div:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .footer div:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .footer div:nth-child(6) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .footer div:nth-child(7) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .footer div:nth-child(8) {
+    grid-column: 3;
+    grid-row: 4;
   }
 }
