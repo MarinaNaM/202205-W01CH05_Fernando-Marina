@@ -230,7 +230,7 @@ body {
   .video__play p {
     display: none;
   }
-  .video__play--desktop {
+  .video .video__play--desktop {
     display: initial;
   }
 
@@ -243,11 +243,11 @@ body {
     display: flex;
     flex-direction: row;
   }
-  .rest-content .gallery-colum__gallery {
-    min-width: 100%;
-  }
-  .rest-content .gallery-colum__gallery__gallery-image {
+  .rest-content .gallery-colum .rest-content__gallery {
     max-width: 33%;
+  }
+  .rest-content .gallery-colum .rest-content__gallery .rest-content__gallery-image {
+    max-width: 100%;
   }
 
   .footer {
