@@ -269,7 +269,7 @@ body {
             }
         }
 
-        &__play--desktop {
+        .video__play--desktop {
             display: initial;
         }
     }
@@ -286,11 +286,10 @@ body {
             display: flex;
             flex-direction: row;
 
-            &__gallery {
-                min-width: 100%;
-
-                &__gallery-image {
-                    max-width: 33%;
+            .rest-content__gallery {
+                max-width: 33%;
+                .rest-content__gallery-image {
+                    max-width: 100%;
                 }
             }
         }
