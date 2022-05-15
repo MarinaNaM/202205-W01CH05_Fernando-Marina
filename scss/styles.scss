@@ -153,6 +153,10 @@ body {
         letter-spacing: 0.4rem;
     }
 
+    &__title--through {
+        text-decoration: line-through $secondary-color;
+    }
+
     &__title--cross {
         width: 2%;
     }
