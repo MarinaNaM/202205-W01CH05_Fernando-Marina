@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +7,10 @@
 
 .letter-spacing {
   letter-spacing: 0.4rem;
+}
+
+p {
+  font-weight: 300;
 }
 
 .header__elem {
@@ -46,4 +51,25 @@
 }
 .works-gallery__block__img img {
   width: 100vw;
+}
+
+.about-main {
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.about-main h2 {
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+.about-main__options {
+  padding: 1rem 0;
+}
+.about-main__options img {
+  margin: 0 7px 5px 5px;
+}
+.about-main p {
+  letter-spacing: 0.2rem;
+}
+.about-main .articles-wrapper__article {
+  padding: 2rem 0 2rem 0;
 }

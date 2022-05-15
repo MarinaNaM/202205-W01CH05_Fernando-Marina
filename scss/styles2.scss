@@ -1,5 +1,7 @@
 @import "variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +10,9 @@
 
 .letter-spacing{
     letter-spacing: 0.4rem;
+}
+p{
+    font-weight: 300;
 }
 
 .header {
@@ -48,5 +53,25 @@
     }
     &__block__img img{
         width: 100vw;
+    }
+}
+.about-main{
+    h2{
+        font-weight: 500;
+        margin: 0 0 20px 0;
+    }
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    &__options{
+        padding: 1rem 0;
+        img{
+            margin: 0 7px 5px 05px;
+        }
+    }
+    p {
+        letter-spacing:0.2rem;
+    }
+    .articles-wrapper__article{
+        padding: 2rem 0 2rem 0;
     }
 }
